@@ -1,0 +1,109 @@
+Implement in C neural network with 2 hidden layer as shown in the picture below. 
+It has 3 inputs, 5 neurons in the first hidden layer, 4 neurons in the second hidden layer and one output neuron. 
+Network is fully connected. For the hidden layers use ReLu as non-linear activation function. For output neuron
+use Sigmoid as non-linear activation function. (Note: reuse as much as possible functions implemented during labs 1, 2, 3)
+
+
+et input data would be {temperature, humidity, air quality index}. 
+Temperature in range -70 to 60; 
+humidity 0 to 100; 
+air quality index 0 to 500 
+
+(you can check in this link what this index denotes).  
+And output would be a satisfaction for human to be in this conditions. '1' means satisfied and '0' - non-satisfied. 
+
+
+0) Create input and output data set (example: input: {30, 40, 25} output: {1}). Dataset size must be larger than 1.
+
+Temperature in range -70 to 60; -5 to 35 satisfied
+humidity 0 to 100; 0-45 satisfied
+air quality index 0 to 500. 0-150 satisfied
+
+dataset = { {-10, 51, 252},	
+            {60, 75, 341},	
+            {20, 25, 86},	
+            {28, 9, 61},	
+            {19, 21, 78},	
+            {14, 44, 144},	
+            {57, 48, 212},	
+            {10, 21, 23},	
+            {-42, 65, 242},	
+            {7, 7, 149},	
+            {-19, 55, 219},	
+            {-48, 91, 190},	
+	        {25, 44, 23},	
+            {53, 53, 279},	
+            {0, 5, 64},	
+            {-4, 35, 103},	
+            {47, 86, 452},	
+            {59, 73, 246},	
+            {45, 48, 208},	
+            {-42, 60, 499},	
+            {32, 26, 55},	
+            {40, 97, 156},	
+            {-7, 89, 494},	
+            {6, 6, 82},	
+            {35, 43, 48},	
+            {20, 23, 34},	
+            {-16, 79, 497},	
+            {39, 96, 261},	
+            {-1, 36, 27},	
+            {11, 27, 72},	
+            {38, 56, 170},	
+            {1, 43, 52},	
+            {55, 64, 364},	
+            {-13, 94, 153},	
+            {27, 1, 114},	
+            {-52, 80, 209},	
+            {7, 40, 18},	
+            {15, 7, 7},	
+            {58, 54, 291},	
+            {-3, 20, 118}
+            };
+
+output = {  {0},
+            {0},
+            {1},
+            {1},
+            {1},
+            {1},
+            {0},
+            {1},
+            {0},
+            {1},
+            {0},
+            {0},
+            {1},
+            {0},
+            {1},
+            {1},
+            {0},
+            {0},
+            {0},
+            {0},
+            {1},
+            {0},
+            {0},
+            {1},
+            {1},
+            {1},
+            {0},
+            {0},
+            {1},
+            {1},
+            {0},
+            {1},
+            {0},
+            {0},
+            {1},
+            {0},
+            {1},
+            {1},
+            {0},
+            {1}
+        };
+
+
+
+
+        
